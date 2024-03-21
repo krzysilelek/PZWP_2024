@@ -7,4 +7,10 @@ public class Kostka extends Skladnik{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public void przygotuj() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

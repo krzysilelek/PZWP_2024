@@ -6,4 +6,9 @@ public class Koncentrat extends Skladnik{
 		super("koncentrat pomidorowy", ilosc);
 	}
 
+	@Override
+	public void przygotuj() {
+		
+	}
+
 }

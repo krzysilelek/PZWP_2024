@@ -1,6 +1,6 @@
 package pl.kurs.restauracja.skladniki;
 
-public class Skladnik {
+public abstract class Skladnik {
 	String nazwa;
 	int ilosc;
 	
@@ -18,6 +18,5 @@ public class Skladnik {
 		System.out.println("Dodaję składnik "+nazwa);
 	}
 	
-	public void przygotuj() {
-	}
+	public abstract void przygotuj();
 }
