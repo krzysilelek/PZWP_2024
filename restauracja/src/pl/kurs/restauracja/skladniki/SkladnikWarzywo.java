@@ -1,6 +1,6 @@
 package pl.kurs.restauracja.skladniki;
 
-public class SkladnikWarzywo extends Skladnik{
+public abstract class SkladnikWarzywo extends Skladnik{
 	
 	SkladnikWarzywo(String nazwa, int ilosc){
 		super(nazwa, ilosc);

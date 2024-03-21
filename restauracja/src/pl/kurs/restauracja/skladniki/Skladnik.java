@@ -1,8 +1,8 @@
 package pl.kurs.restauracja.skladniki;
 
 public abstract class Skladnik {
-	String nazwa;
-	int ilosc;
+	private String nazwa;
+	private int ilosc;
 	
 	public Skladnik(String nazwa, int ilosc) {
 		this.nazwa = nazwa;
