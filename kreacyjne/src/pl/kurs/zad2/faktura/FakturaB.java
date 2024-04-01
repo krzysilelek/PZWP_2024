@@ -7,15 +7,26 @@ public class FakturaB {
     private String kontrahent;
     private List<PozycjaB> pozycje = new ArrayList<PozycjaB>();
 
-    public String getKontrahent() {
+    public String pobierzKontrahent() {
         return kontrahent;
     }
 
-    public void setKontrahent(String kontrahent) {
+    public void ustawKontrahent(String kontrahent) {
         this.kontrahent = kontrahent;
     }
 
-    public List<PozycjaB> getPozycje() {
+    public List<PozycjaB> pobierzPozycje() {
         return pozycje;
+    }
+    
+    public void ustawPozycje(PozycjaB pozycja) {
+    	pozycje.add(pozycja);
+    }
+    
+    public void wypiszFakture() {
+    	System.out.println("Kontrahent: "+kontrahent);
+    	for(PozycjaB pozycja:pozycje) {
+    		pozycja.wypiszPozycje();
+    	}
     }
 }

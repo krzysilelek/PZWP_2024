@@ -14,12 +14,20 @@ public class PozycjaB {
         this.vat = builder.vat;
         this.ku = builder.ku;
     }
+    
+    public void wypiszPozycje() {
+    	System.out.println("Opis "+opis);
+    	System.out.println("Ilość "+ilosc);
+    	System.out.println("Cena "+cena);
+    	System.out.println("Vat "+vat);
+    	System.out.println("Ku "+ku);
+    }
 
     public static class Builder {
-        private String opis;
-        private int ilosc;
-        private double cena;
-        private int vat;
+        private String opis = "";
+        private int ilosc = 0;
+        private double cena = 0.0;
+        private int vat = 0;
         private String ku = "";
 
         public Builder(String opis, int ilosc) {

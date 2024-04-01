@@ -10,8 +10,9 @@ public class Test {
 		//faktura.getPozycje().add(new Pozycja("montaz",1,300,7,"234"));
 		
 		FakturaB fakturab = new FakturaB();
-		fakturab.setKontrahent("Krzaczek Sp. z o.o.");
-		fakturab.getPozycje().add(new PozycjaB.Builder("komputer",1).cena(1000).build());
-		fakturab.getPozycje().add(new PozycjaB.Builder("drukarka",2).cena(300).vat(23).build());
+		fakturab.ustawKontrahent("Krzaczek Sp. z o.o.");
+		fakturab.ustawPozycje(new PozycjaB.Builder("komputer",1).cena(1000).build());
+		fakturab.ustawPozycje(new PozycjaB.Builder("drukarka",2).cena(300).vat(23).build());
+		fakturab.wypiszFakture();
 	}
 }
