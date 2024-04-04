@@ -1,5 +1,5 @@
 package pl.kurs.zad1.serwis;
-public class SamochodOsobowy implements ISamochod{
+public class SamochodOsobowy implements Samochod{
 	public void zatankuj() {
 		System.out.println(this+" Tankowanie samochodu ");
 	}

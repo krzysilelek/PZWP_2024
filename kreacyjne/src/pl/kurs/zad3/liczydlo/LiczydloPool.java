@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LiczydloPool {
 	private volatile static LiczydloPool INSTANCE;
-	private static final int MAX_POOL_SIZE = 2;
+	private static final int MAX_POOL_SIZE = 1;
 	private volatile List<Liczydlo> pool = new ArrayList<>();
 	
 	private LiczydloPool() {

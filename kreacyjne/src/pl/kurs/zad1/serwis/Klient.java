@@ -4,22 +4,20 @@ public class Klient {
 		new Klient();
 	}
 	public Klient() {
-		Serwis serwis = new Serwis();
-		serwis.nadajFabryke(new SamochodOsobowyFabryka());
-		ISamochod mojSamochod = serwis.przygotujSamochod();
+		//Serwis serwis = new Serwis();
+		//Samochod mojSamochod = serwis.przygotujSamochod("osobowy");
+		//mojSamochod.test();
+		//Samochod mojSamochod2 = serwis.przygotujSamochod("ciężarowy");
+		//mojSamochod2.test();
+		
+		ASerwis serwis = new OsobowySerwis();
+		Samochod mojSamochod = serwis.przygotujSamochod();
 		mojSamochod.test();
-		
-		System.out.println("================================================================");
-		
-		serwis.nadajFabryke(new SamochodCiezarowyFabryka());
-		ISamochod mojSamochod2 = serwis.przygotujSamochod();
+		serwis = new CiezarowkowySerwis();
+		Samochod mojSamochod2 = serwis.przygotujSamochod();
 		mojSamochod2.test();
-		
-		System.out.println("================================================================");
-		
-		serwis.nadajFabryke(new SamochodRajdowyFabryka());
-		ISamochod mojSamochod3 = serwis.przygotujSamochod();
-		mojSamochod3.test();
 	}
+	
+
 }
 
