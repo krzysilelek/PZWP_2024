@@ -4,7 +4,7 @@ public class SamochodCiezarowy implements Samochod{
 		System.out.println(this+" Tankowanie ciężarówki ");
 	}
 	public void sprawdzPlyny() { 
-		System.out.println(this+" Sprawdzanie płynów cięarówki");
+		System.out.println(this+" Sprawdzanie płynów ciężarówki");
 	}
 	public void test() {
 		System.out.println("Ciężarówka "+this+" gotowa");
