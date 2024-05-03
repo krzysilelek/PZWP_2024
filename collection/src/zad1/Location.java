@@ -6,10 +6,11 @@ import java.util.List;
 public class Location implements IElement{
 	
 	private String name;
-	private List<IElement> elements = new ArrayList<IElement>();
+	private List<IElement> elements;
 	
 	public Location(String name) {
 		this.name = name;
+		this.elements = new ArrayList<IElement>();
 	}
 	
 	@Override
