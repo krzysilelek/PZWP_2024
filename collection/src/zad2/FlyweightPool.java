@@ -24,13 +24,13 @@ public final class FlyweightPool {
 	public Item getArticle(String name, float price) {
 		
 		WeakReference<Item> ref = articlesPool.get(name);
-        Item article = (ref != null) ? ref.get() : null;
-
-        if (article == null) {
-            article = new Item(name, price);
-            articlesPool.put(name, new WeakReference<Item>(article));
-        }
-
-        return article;
+		Item article = (ref != null) ? ref.get() : null;
+		
+		if (article == null) {
+			article = new Item(name, price);
+			articlesPool.put(name, new WeakReference<Item>(article));
+			}
+		
+		return article;
 	}
 }
