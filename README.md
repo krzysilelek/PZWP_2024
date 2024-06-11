@@ -4,3 +4,4 @@
 - Laboratorium 2 - KREACYJNE
 - Laboratorium 3 - STRUKTURALNE
 - Laboratorium 4 - KOLEKCJE
+- Laboratorium 5 - KOMUNIKACYJNE
