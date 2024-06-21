@@ -5,3 +5,4 @@
 - Laboratorium 3 - STRUKTURALNE
 - Laboratorium 4 - KOLEKCJE
 - Laboratorium 5 - KOMUNIKACYJNE
+- Laboratorium 6 - BEHAWIORALNE
